@@ -39559,8 +39559,12 @@ $1(a){var s=J.Db(B.b8.M7(0,a,null),new A.a4r(),t.be).em(0),r=A.a8(s).i("bV<1>")
 return A.av(new A.bV(s,r),!0,r.i("bi.E"))},
 $S:215}
 A.a4r.prototype={
-$1(a){var s=J.aq(a)
-return new A.hD(s.h(a,"thumbnailUrl"),s.h(a,"id"),s.h(a,"title"))},
+$1(a){var s,r="null il est ",q=J.aq(a),p=q.h(a,"thumbnailUrl")
+if(p==null)p=r
+s=q.h(a,"id")
+if(s==null)s=0
+q=q.h(a,"title")
+return new A.hD(p,s,q==null?r:q)},
 $S:212}
 A.pP.prototype={
 j(a,b){var s,r
@@ -40838,7 +40842,7 @@ K(a){return A.hK(null,null,1/a.W(t.w).f.b)}}
 A.F5.prototype={
 K(a){var s,r=a.W(t.w).f,q=r.f,p=q.b+8,o=this.c,n=o.b,m=n>=p+8+43,l=26+q.a,k=r.a.a-q.c-26,j=new A.j(A.I(o.a,l,k),n-8-p)
 n=this.d
-s=new A.j(A.I(n.a,l,k),n.b-8+p)
+s=new A.j(A.I(n.a,l,k),n.b+8-p)
 q=m?j:s
 return new A.e7(new A.b_(8,p,8,8),new A.jn(new A.L3(j,s,m),new A.zP(q,A.axJ(this.e),m,A.aH0(),null),null),null)}}
 A.MO.prototype={
